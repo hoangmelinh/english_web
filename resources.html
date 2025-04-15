@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài nguyên học tập - EasyEnglish</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="resources.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="EasyEnglish Logo">
+                    <span>EasyEnglish</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="courses.html">Khóa học</a></li>
+                    <li><a href="learning-path.html">Lộ trình</a></li>
+                    <li><a href="resources.html" class="active">Tài nguyên</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-outline">Đăng nhập</a>
+                <a href="register.html" class="btn btn-primary">Đăng ký</a>
+            </div>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Resources Hero Section -->
+    <section class="resources-hero">
+        <div class="container">
+            <h1>Tài nguyên học tiếng Anh</h1>
+            <p>Khám phá kho tài liệu, bài tập và công cụ hỗ trợ học tiếng Anh miễn phí</p>
+            <div class="search-container">
+                <input type="text" id="resource-search" placeholder="Tìm kiếm tài liệu...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Categories -->
+    <section class="resource-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <a href="#grammar" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Ngữ pháp</h3>
+                    <p>Tài liệu và bài tập về ngữ pháp tiếng Anh</p>
+                </a>
+                <a href="#vocabulary" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Từ vựng</h3>
+                    <p>Danh sách từ vựng theo chủ đề và công cụ học từ</p>
+                </a>
+                <a href="#listening" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>Luyện nghe</h3>
+                    <p>Bài nghe, podcast và audio books</p>
+                </a>
+                <a href="#speaking" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Luyện nói</h3>
+                    <p>Mẫu câu giao tiếp và bài tập phát âm</p>
+                </a>
+                <a href="#reading" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Luyện đọc</h3>
+                    <p>Bài đọc hiểu và truyện ngắn tiếng Anh</p>
+                </a>
+                <a href="#writing" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Luyện viết</h3>
+                    <p>Mẫu bài viết và hướng dẫn cách viết</p>
+                </a>
+                <a href="#exam" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Đề thi</h3>
+                    <p>Đề thi thử IELTS, TOEIC, TOEFL và các chứng chỉ khác</p>
+                </a>
+                <a href="#tools" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Công cụ học tập</h3>
+                    <p>Ứng dụng và công cụ trực tuyến hỗ trợ học tiếng Anh</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grammar Resources -->
+    <section id="grammar" class="resource-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ngữ pháp</h2>
+                <div class="view-options">
+                    <button class="view-option active" data-view="grid"><i class="fas fa-th"></i></button>
+                    <button class="view-option" data-view="list"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon pdf">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h3>12 thì cơ bản trong tiếng Anh</h3>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-download"></i> 1,245</span>
+                            <span><i class="fas fa-eye"></i> 3,520</span>
+                        </div>
+                        <p>Tài liệu tổng hợp 12 thì cơ bản trong tiếng Anh kèm công thức, cách dùng và ví dụ chi tiết</p>
+                        <a href="#" class="btn btn-primary">Tải xuống</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon doc">
+                        <i class="fas fa-file-word"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Bài tập về thì hiện tại đơn và hiện tại tiếp diễn</h3>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-download"></i> 870</span>
+                            <span><i class="fas fa-eye"></i> 2,150</span>
+                        </div>
+                        <p>50 bài tập thực hành về thì hiện tại đơn và hiện tại tiếp diễn có đáp án chi tiết</p>
+                        <a href="#" class="btn btn-primary">Tải xuống</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon video">
+                        <i class="fas fa-file-video"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Cách sử dụng các loại câu điều kiện trong tiếng Anh</h3>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-download"></i> 635</span>
+                            <span><i class="fas fa-eye"></i> 1,890</span>
+                        </div>
+                        <p>Video giảng dạy chi tiết về các loại câu điều kiện và cách sử dụng trong tình huống thực tế</p>
+                        <a href="#" class="btn btn-primary">Xem ngay</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon pdf">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Ngữ pháp tiếng Anh toàn tập</h3>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-download"></i> 2,370</span>
+                            <span><i class="fas fa-eye"></i> 5,640</span>
+                        </div>
+                        <p>Tài liệu tổng hợp toàn bộ ngữ pháp tiếng Anh từ cơ bản đến nâng cao, phù hợp cho mọi trình độ</p>
+                        <a href="#" class="btn btn-primary">Tải xuống</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="#" class="btn btn-outline">Xem thêm tài liệu ngữ pháp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vocabulary Resources -->
+    <section id="vocabulary" class="resource-section alternate">
+        <div class="container">
+            <div class="section-header">
+                <h2>Từ vựng</h2>
+                <div class="view-options">
+                    <button class="view-option active" data-view="grid"><i class="fas fa-th"></i></button>
+                    <button class="view-option" data-view="list"><i class="fas fa-list"></i></button>
+                </div>
+            </div>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon pdf">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h3>3000 từ vựng tiếng Anh thông dụng nhất</h3>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-download"></i> 3,120</span>
+                            <span><i class="fas fa-eye"></i> 7,845</span>
+                        </div>
+                        <p>Danh sách 3000 từ vựng tiếng Anh thông dụng nhất kèm phiên âm, nghĩa tiếng Việt và ví dụ</p>
+                        <a href="#" class="btn btn-primary">Tải xuống</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon excel">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Từ vựng theo chủ đề (20 chủ đề)</h3>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-download"></i> 1,530</span>
+                            <span><i class="fas fa-eye"></i> 3,870</span>
+                        </div>
+                        <p>Bộ từ vựng được phân loại theo 20 chủ đề thông dụng như: du lịch, công nghệ, kinh doanh, y tế...</p>
+                        <a href="#" class="btn btn-primary">Tải xuống</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon app">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Ứng dụng Flashcard từ vựng</h3>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-download"></i> 5,280</span>
+                            <span><i class="fas fa-eye"></i> 12,450</span>
+                        </div>
+                        <p>Ứng dụng học từ vựng bằng phương pháp Flashcard giúp ghi nhớ từ vựng hiệu quả hơn</p>
+                        <a href="#" class="btn btn-primary">Tải ứng dụng</a>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon audio">
+                        <i class="fas fa-file-audio"></i>
+                    </div>
+                    <div class="resource-content">
+                        <h3>Audio phát âm 1000 từ tiếng Anh thông dụng</h3>
+                        <div class="resource-meta">
+                            <span><i class="fas fa-download"></i> 2,150</span>
+                            <span><i class="fas fa-eye"></i> 4,780</span>
+                        </div>
+                        <p>File audio giúp bạn luyện phát âm chuẩn 1000 từ tiếng Anh thông dụng nhất</p>
+                        <a href="#" class="btn btn-primary">Tải xuống</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="#" class="btn btn-outline">Xem thêm tài liệu từ vựng</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flashcard Tool Section -->
+    <section class="flashcard-tool">
+        <div class="container">
+            <div class="flashcard-content">
+                <h2>Công cụ học từ vựng Flashcard</h2>
+                <p>Học từ vựng hiệu quả với phương pháp Flashcard khoa học. Lựa chọn chủ đề bạn muốn học và bắt đầu ngay!</p>
+                <div class="flashcard-topics">
+                    <a href="#" class="topic-btn">Cơ bản</a>
+                    <a href="#" class="topic-btn">Du lịch</a>
+                    <a href="#" class="topic-btn">Kinh doanh</a>
+                    <a href="#" class="topic-btn">Công nghệ</a>
+                    <a href="#" class="topic-btn">Y tế</a>
+                    <a href="#" class="topic-btn">Môi trường</a>
+                </div>
+                <a href="#" class="btn btn-primary btn-large">Bắt đầu học</a>
+            </div>
+            <div class="flashcard-preview">
+                <div class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <span class="card-word">Perseverance</span>
+                            <button class="flip-btn"><i class="fas fa-sync-alt"></i></button>
+                        </div>
+                        <div class="flashcard-back">
+                            <span class="card-phonetic">/ˌpɜːsɪˈvɪərəns/</span>
+                            <span class="card-meaning">Sự kiên trì</span>
+                            <p class="card-example">"Her perseverance helped her overcome all obstacles."</p>
+                            <div class="card-controls">
+                                <button class="card-btn"><i class="fas fa-volume-up"></i></button>
+                                <button class="card-btn"><i class="fas fa-check"></i></button>
+                                <button class="card-btn"><i class="fas fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini test section -->
+    <section class="mini-test">
+        <div class="container">
+            <h2>Kiểm tra trình độ nhanh</h2>
+            <p>Làm bài kiểm tra nhanh để đánh giá trình độ tiếng Anh hiện tại của bạn</p>
+            <div class="test-cards">
+                <div class="test-card">
+                    <h3>Kiểm tra ngữ pháp</h3>
+                    <p>20 câu hỏi ngữ pháp cơ bản</p>
+                    <span class="test-time">10 phút</span>
+                    <a href="#" class="btn btn-primary">Bắt đầu</a>
+                </div>
+                <div class="test-card">
+                    <h3>Kiểm tra từ vựng</h3>
+                    <p>30 câu hỏi từ vựng thông dụng</p>
+                    <span class="test-time">15 phút</span>
+                    <a href="#" class="btn btn-primary">Bắt đầu</a>
+                </div>
+                <div class="test-card">
+                    <h3>Kiểm tra đọc hiểu</h3>
+                    <p>2 bài đọc với 10 câu hỏi</p>
+                    <span class="test-time">20 phút</span>
+                    <a href="#" class="btn btn-primary">Bắt đầu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="resource-section">
+        <div class="container">
+            <h2>Công cụ học tập</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-headphones-alt"></i>
+                    </div>
+                    <h3>Luyện nghe phát âm</h3>
+                    <p>Công cụ giúp bạn luyện nghe và phát âm chuẩn với người bản xứ</p>
+                    <a href="#" class="btn btn-primary">Sử dụng ngay</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>Trình kiểm tra ngữ pháp</h3>
+                    <p>Kiểm tra lỗi ngữ pháp, chính tả và cách diễn đạt trong bài viết tiếng Anh</p>
+                    <a href="#" class="btn btn-primary">Sử dụng ngay</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Tutor</h3>
+                    <p>Trợ lý AI giúp giải đáp thắc mắc và hỗ trợ học tiếng Anh 24/7</p>
+                    <a href="#" class="btn btn-primary">Sử dụng ngay</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Lịch học thông minh</h3>
+                    <p>Lên kế hoạch học tập khoa học và nhận nhắc nhở định kỳ</p>
+                    <a href="#" class="btn btn-primary">Sử dụng ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dark Mode Toggle -->
+    <section class="dark-mode-section">
+        <div class="container">
+            <div class="dark-mode-content">
+                <div class="mode-icon">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="mode-text">
+                    <h2>Chế độ tối</h2>
+                    <p>Chuyển sang chế độ tối để giảm mỏi mắt khi học vào ban đêm hoặc trong môi trường ánh sáng yếu</p>
+                </div>
+                <div class="mode-toggle">
+                    <label class="toggle-switch">
+                        <input type="checkbox" class="dark-mode-toggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Đăng ký nhận tài liệu học miễn phí</h2>
+            <p>Nhận tài liệu học tiếng Anh mới nhất và các mẹo học tập hiệu quả mỗi tuần</p>
+            <form class="newsletter-big-form">
+                <input type="email" placeholder="Nhập địa chỉ email của bạn">
+                <button type="submit" class="btn btn-primary">Đăng ký</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="EasyEnglish Logo">
+                        <span>EasyEnglish</span>
+                    </div>
+                    <p>Nền tảng học tiếng Anh trực tuyến hiệu quả và dễ dàng cho người Việt</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="courses.html">Khóa học</a></li>
+                        <li><a href="learning-path.html">Lộ trình</a></li>
+                        <li><a href="resources.html">Tài nguyên</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Hỗ trợ</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Nhận thông tin mới</h3>
+                    <p>Đăng ký để nhận thông tin về khóa học và tài nguyên mới</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email của bạn">
+                        <button type="submit" class="btn btn-primary">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EasyEnglish. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                    <span>Trang chủ</span>
+                </a>
+            </li>
+            <li>
+                <a href="courses.html">
+                    <i class="fas fa-book"></i>
+                    <span>Khóa học</span>
+                </a>
+            </li>
+            <li>
+                <a href="learning-path.html">
+                    <i class="fas fa-road"></i>
+                    <span>Lộ trình</span>
+                </a>
+            </li>
+            <li>
+                <a href="resources.html" class="active">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Tài nguyên</span>
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class="fas fa-user"></i>
+                    <span>Tài khoản</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/resources.js"></script>
+</body>
+</html> 

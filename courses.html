@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khóa học - EasyEnglish</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="EasyEnglish Logo">
+                    <span>EasyEnglish</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="courses.html" class="active">Khóa học</a></li>
+                    <li><a href="learning-path.html">Lộ trình</a></li>
+                    <li><a href="resources.html">Tài nguyên</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-outline">Đăng nhập</a>
+                <a href="register.html" class="btn btn-primary">Đăng ký</a>
+            </div>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Courses Hero Section -->
+    <section class="courses-hero">
+        <div class="container">
+            <h1>Khóa học tiếng Anh</h1>
+            <p>Khám phá các khóa học chất lượng cao phù hợp với mọi trình độ</p>
+            <div class="search-container">
+                <input type="text" id="course-search" placeholder="Tìm kiếm khóa học...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Filter Section -->
+    <section class="courses-filter">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <h3>Trình độ</h3>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="level" value="beginner">
+                            <span class="checkmark"></span>
+                            Beginner
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="level" value="intermediate">
+                            <span class="checkmark"></span>
+                            Intermediate
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="level" value="advanced">
+                            <span class="checkmark"></span>
+                            Advanced
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Kỹ năng</h3>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="skill" value="listening">
+                            <span class="checkmark"></span>
+                            Nghe (Listening)
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="skill" value="speaking">
+                            <span class="checkmark"></span>
+                            Nói (Speaking)
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="skill" value="reading">
+                            <span class="checkmark"></span>
+                            Đọc (Reading)
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="skill" value="writing">
+                            <span class="checkmark"></span>
+                            Viết (Writing)
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="skill" value="grammar">
+                            <span class="checkmark"></span>
+                            Ngữ pháp (Grammar)
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="skill" value="vocabulary">
+                            <span class="checkmark"></span>
+                            Từ vựng (Vocabulary)
+                        </label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Giá</h3>
+                    <div class="filter-options">
+                        <label class="filter-option">
+                            <input type="checkbox" name="price" value="free">
+                            <span class="checkmark"></span>
+                            Miễn phí
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="price" value="paid">
+                            <span class="checkmark"></span>
+                            Trả phí
+                        </label>
+                    </div>
+                </div>
+                <button class="btn btn-primary filter-apply">Áp dụng</button>
+                <button class="btn btn-outline filter-reset">Đặt lại</button>
+            </div>
+            <div class="filter-tags" id="filter-tags">
+                <!-- Filter tags will be added here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Listing Section -->
+    <section class="courses-listing">
+        <div class="container">
+            <div class="courses-header">
+                <h2>Tất cả khóa học (12)</h2>
+                <div class="courses-sort">
+                    <label for="sort-courses">Sắp xếp theo:</label>
+                    <select id="sort-courses">
+                        <option value="popular">Phổ biến nhất</option>
+                        <option value="newest">Mới nhất</option>
+                        <option value="price-low">Giá: Thấp đến Cao</option>
+                        <option value="price-high">Giá: Cao đến Thấp</option>
+                    </select>
+                </div>
+            </div>
+            <div class="courses-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card" data-level="beginner" data-skills="listening,speaking" data-price="free">
+                    <div class="course-image">
+                        <img src="images/course-1.jpg" alt="Beginner English Conversation">
+                        <div class="course-badge free">Miễn phí</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-level">
+                            <span class="level-tag beginner">Beginner</span>
+                            <span class="course-students"><i class="fas fa-user-graduate"></i> 1,245 học viên</span>
+                        </div>
+                        <h3>Tiếng Anh giao tiếp cơ bản cho người mới bắt đầu</h3>
+                        <div class="course-skills">
+                            <span class="skill-tag">Nghe</span>
+                            <span class="skill-tag">Nói</span>
+                        </div>
+                        <div class="course-description">
+                            <p>Khóa học giúp bạn làm quen với các tình huống giao tiếp hàng ngày bằng tiếng Anh với phát âm và ngữ điệu chuẩn.</p>
+                        </div>
+                        <a href="course-detail.html" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+                
+                <!-- Course Card 2 -->
+                <div class="course-card" data-level="intermediate" data-skills="grammar,vocabulary" data-price="paid">
+                    <div class="course-image">
+                        <img src="images/course-2.jpg" alt="Grammar Masterclass">
+                        <div class="course-badge">799.000₫</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-level">
+                            <span class="level-tag intermediate">Intermediate</span>
+                            <span class="course-students"><i class="fas fa-user-graduate"></i> 894 học viên</span>
+                        </div>
+                        <h3>Ngữ pháp tiếng Anh nâng cao và cách ứng dụng</h3>
+                        <div class="course-skills">
+                            <span class="skill-tag">Ngữ pháp</span>
+                            <span class="skill-tag">Từ vựng</span>
+                        </div>
+                        <div class="course-description">
+                            <p>Khóa học giúp bạn nắm vững các cấu trúc ngữ pháp phức tạp và cách sử dụng chúng một cách tự nhiên trong giao tiếp.</p>
+                        </div>
+                        <a href="course-detail.html" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+                
+                <!-- Course Card 3 -->
+                <div class="course-card" data-level="advanced" data-skills="speaking,vocabulary" data-price="paid">
+                    <div class="course-image">
+                        <img src="images/course-3.jpg" alt="Business English">
+                        <div class="course-badge">1.299.000₫</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-level">
+                            <span class="level-tag advanced">Advanced</span>
+                            <span class="course-students"><i class="fas fa-user-graduate"></i> 621 học viên</span>
+                        </div>
+                        <h3>Tiếng Anh thương mại cho công việc và sự nghiệp</h3>
+                        <div class="course-skills">
+                            <span class="skill-tag">Nói</span>
+                            <span class="skill-tag">Từ vựng</span>
+                        </div>
+                        <div class="course-description">
+                            <p>Khóa học trang bị từ vựng chuyên ngành và kỹ năng giao tiếp trong môi trường doanh nghiệp quốc tế.</p>
+                        </div>
+                        <a href="course-detail.html" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+                
+                <!-- Course Card 4 -->
+                <div class="course-card" data-level="beginner" data-skills="reading,vocabulary" data-price="free">
+                    <div class="course-image">
+                        <img src="images/course-4.jpg" alt="Reading Skills">
+                        <div class="course-badge free">Miễn phí</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-level">
+                            <span class="level-tag beginner">Beginner</span>
+                            <span class="course-students"><i class="fas fa-user-graduate"></i> 1,063 học viên</span>
+                        </div>
+                        <h3>Kỹ năng đọc hiểu tiếng Anh cơ bản</h3>
+                        <div class="course-skills">
+                            <span class="skill-tag">Đọc</span>
+                            <span class="skill-tag">Từ vựng</span>
+                        </div>
+                        <div class="course-description">
+                            <p>Khóa học giúp bạn phát triển kỹ năng đọc hiểu thông qua các bài đọc thú vị và luyện tập từ vựng.</p>
+                        </div>
+                        <a href="course-detail.html" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+                
+                <!-- Course Card 5 -->
+                <div class="course-card" data-level="intermediate" data-skills="listening,speaking" data-price="paid">
+                    <div class="course-image">
+                        <img src="images/course-5.jpg" alt="English Pronunciation">
+                        <div class="course-badge">599.000₫</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-level">
+                            <span class="level-tag intermediate">Intermediate</span>
+                            <span class="course-students"><i class="fas fa-user-graduate"></i> 782 học viên</span>
+                        </div>
+                        <h3>Phát âm tiếng Anh chính xác</h3>
+                        <div class="course-skills">
+                            <span class="skill-tag">Nghe</span>
+                            <span class="skill-tag">Nói</span>
+                        </div>
+                        <div class="course-description">
+                            <p>Khóa học tập trung vào kỹ năng phát âm, ngữ điệu và nhấn nhá đúng cách để giao tiếp tiếng Anh tự nhiên hơn.</p>
+                        </div>
+                        <a href="course-detail.html" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+                
+                <!-- Course Card 6 -->
+                <div class="course-card" data-level="advanced" data-skills="writing" data-price="paid">
+                    <div class="course-image">
+                        <img src="images/course-6.jpg" alt="Academic Writing">
+                        <div class="course-badge">999.000₫</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-level">
+                            <span class="level-tag advanced">Advanced</span>
+                            <span class="course-students"><i class="fas fa-user-graduate"></i> 528 học viên</span>
+                        </div>
+                        <h3>Viết luận tiếng Anh học thuật</h3>
+                        <div class="course-skills">
+                            <span class="skill-tag">Viết</span>
+                        </div>
+                        <div class="course-description">
+                            <p>Khóa học hướng dẫn cách viết các bài luận học thuật, báo cáo nghiên cứu, và các loại văn bản chuyên nghiệp khác.</p>
+                        </div>
+                        <a href="course-detail.html" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+                
+                <!-- More courses can be added here -->
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="next">&raquo;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="EasyEnglish Logo">
+                        <span>EasyEnglish</span>
+                    </div>
+                    <p>Nền tảng học tiếng Anh trực tuyến hiệu quả và dễ dàng cho người Việt</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="courses.html">Khóa học</a></li>
+                        <li><a href="learning-path.html">Lộ trình</a></li>
+                        <li><a href="resources.html">Tài nguyên</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Hỗ trợ</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Nhận thông tin mới</h3>
+                    <p>Đăng ký để nhận thông tin về khóa học và tài nguyên mới</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email của bạn">
+                        <button type="submit" class="btn btn-primary">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EasyEnglish. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                    <span>Trang chủ</span>
+                </a>
+            </li>
+            <li>
+                <a href="courses.html" class="active">
+                    <i class="fas fa-book"></i>
+                    <span>Khóa học</span>
+                </a>
+            </li>
+            <li>
+                <a href="learning-path.html">
+                    <i class="fas fa-road"></i>
+                    <span>Lộ trình</span>
+                </a>
+            </li>
+            <li>
+                <a href="resources.html">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Tài nguyên</span>
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class="fas fa-user"></i>
+                    <span>Tài khoản</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+</html> 

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lộ trình học - EasyEnglish</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="learning-path.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="EasyEnglish Logo">
+                    <span>EasyEnglish</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="courses.html">Khóa học</a></li>
+                    <li><a href="learning-path.html" class="active">Lộ trình</a></li>
+                    <li><a href="resources.html">Tài nguyên</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-outline">Đăng nhập</a>
+                <a href="register.html" class="btn btn-primary">Đăng ký</a>
+            </div>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Learning Path Hero Section -->
+    <section class="learning-path-hero">
+        <div class="container">
+            <h1>Lộ trình học tiếng Anh</h1>
+            <p>Trải nghiệm hành trình học tiếng Anh được thiết kế riêng cho bạn, từ người mới bắt đầu đến trình độ nâng cao</p>
+            <a href="#assessment" class="btn btn-primary btn-large">Kiểm tra trình độ ngay</a>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>Cách thức hoạt động</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Kiểm tra trình độ</h3>
+                    <p>Làm bài kiểm tra nhanh để xác định trình độ hiện tại và điểm mạnh, điểm yếu của bạn</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Nhận lộ trình cá nhân hóa</h3>
+                    <p>Nhận kế hoạch học tập được thiết kế riêng dựa trên kết quả bài kiểm tra và mục tiêu của bạn</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Bắt đầu học tập</h3>
+                    <p>Trải nghiệm các bài học tương tác, bài tập thực hành và nhận phản hồi chi tiết</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Theo dõi tiến độ</h3>
+                    <p>Xem tiến độ của bạn theo thời gian thực và nhận đề xuất cải thiện liên tục</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assessment Section -->
+    <section id="assessment" class="assessment">
+        <div class="container">
+            <div class="assessment-content">
+                <h2>Kiểm tra trình độ</h2>
+                <p>Hoàn thành bài kiểm tra nhanh (khoảng 15 phút) để chúng tôi có thể xác định trình độ hiện tại và tạo lộ trình học tập phù hợp nhất với bạn.</p>
+                <ul class="assessment-benefits">
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <span>Đánh giá chính xác trình độ tiếng Anh hiện tại</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <span>Phân tích điểm mạnh và điểm yếu của bạn</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <span>Đề xuất các khóa học phù hợp với khả năng</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        <span>Cá nhân hóa lộ trình học tập hiệu quả</span>
+                    </li>
+                </ul>
+                <a href="assessment.html" class="btn btn-primary">Bắt đầu bài kiểm tra</a>
+            </div>
+            <div class="assessment-image">
+                <img src="images/assessment.png" alt="Kiểm tra trình độ tiếng Anh">
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Paths Section -->
+    <section class="learning-paths">
+        <div class="container">
+            <h2>Các lộ trình học phổ biến</h2>
+            <p class="section-desc">Khám phá các lộ trình học được thiết kế cho những mục tiêu phổ biến nhất</p>
+            
+            <div class="path-tabs">
+                <button class="path-tab active" data-tab="beginner">Người mới bắt đầu</button>
+                <button class="path-tab" data-tab="conversation">Giao tiếp</button>
+                <button class="path-tab" data-tab="business">Tiếng Anh thương mại</button>
+                <button class="path-tab" data-tab="ielts">Luyện thi IELTS</button>
+            </div>
+            
+            <div class="path-content">
+                <!-- Beginner Path -->
+                <div class="path-timeline active" id="beginner-path">
+                    <div class="timeline-header">
+                        <div class="path-level">
+                            <span class="level-icon beginner">
+                                <i class="fas fa-seedling"></i>
+                            </span>
+                            <h3>Người mới bắt đầu</h3>
+                            <p>0-6 tháng</p>
+                        </div>
+                        <div class="path-stats">
+                            <div class="stat">
+                                <span class="stat-number">18</span>
+                                <span class="stat-label">Khóa học</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">120</span>
+                                <span class="stat-label">Bài học</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">40+</span>
+                                <span class="stat-label">Giờ học</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <span>1</span>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Phát âm cơ bản</h4>
+                                <p>Làm quen với bảng phiên âm quốc tế (IPA) và thực hành phát âm tiếng Anh chuẩn</p>
+                                <div class="timeline-courses">
+                                    <a href="#" class="timeline-course">
+                                        <span class="course-name">Phát âm tiếng Anh cho người mới bắt đầu</span>
+                                        <span class="course-duration">6 giờ</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <span>2</span>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Từ vựng cơ bản</h4>
+                                <p>Học 500 từ vựng tiếng Anh thông dụng nhất trong giao tiếp hàng ngày</p>
+                                <div class="timeline-courses">
+                                    <a href="#" class="timeline-course">
+                                        <span class="course-name">500 từ vựng tiếng Anh cơ bản</span>
+                                        <span class="course-duration">10 giờ</span>
+                                    </a>
+                                    <a href="#" class="timeline-course">
+                                        <span class="course-name">Từ vựng theo chủ đề</span>
+                                        <span class="course-duration">8 giờ</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <span>3</span>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Ngữ pháp cơ bản</h4>
+                                <p>Nắm vững các thì cơ bản và cấu trúc câu đơn giản trong tiếng Anh</p>
+                                <div class="timeline-courses">
+                                    <a href="#" class="timeline-course">
+                                        <span class="course-name">Ngữ pháp tiếng Anh cho người mới bắt đầu</span>
+                                        <span class="course-duration">12 giờ</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <span>4</span>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Giao tiếp đơn giản</h4>
+                                <p>Thực hành các cuộc hội thoại đơn giản trong các tình huống hàng ngày</p>
+                                <div class="timeline-courses">
+                                    <a href="#" class="timeline-course">
+                                        <span class="course-name">Giao tiếp tiếng Anh cơ bản</span>
+                                        <span class="course-duration">15 giờ</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker completion">
+                                <i class="fas fa-flag-checkered"></i>
+                            </div>
+                            <div class="timeline-content completion">
+                                <h4>Hoàn thành lộ trình</h4>
+                                <p>Chúc mừng! Bạn đã hoàn thành lộ trình cho người mới bắt đầu.</p>
+                                <div class="completion-actions">
+                                    <a href="#" class="btn btn-primary">Nhận chứng chỉ</a>
+                                    <a href="#" class="btn btn-outline">Tiếp tục với lộ trình trung cấp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other paths would be implemented similarly but initially hidden -->
+                <div class="path-timeline" id="conversation-path">
+                    <!-- Content for conversation path -->
+                    <div class="path-empty">
+                        <i class="fas fa-comment-dots"></i>
+                        <h3>Lộ trình Giao tiếp</h3>
+                        <p>Vui lòng đăng nhập hoặc đăng ký để xem lộ trình Giao tiếp tiếng Anh chi tiết</p>
+                        <a href="register.html" class="btn btn-primary">Đăng ký ngay</a>
+                    </div>
+                </div>
+                
+                <div class="path-timeline" id="business-path">
+                    <!-- Content for business English path -->
+                    <div class="path-empty">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Lộ trình Tiếng Anh thương mại</h3>
+                        <p>Vui lòng đăng nhập hoặc đăng ký để xem lộ trình Tiếng Anh thương mại chi tiết</p>
+                        <a href="register.html" class="btn btn-primary">Đăng ký ngay</a>
+                    </div>
+                </div>
+                
+                <div class="path-timeline" id="ielts-path">
+                    <!-- Content for IELTS path -->
+                    <div class="path-empty">
+                        <i class="fas fa-award"></i>
+                        <h3>Lộ trình Luyện thi IELTS</h3>
+                        <p>Vui lòng đăng nhập hoặc đăng ký để xem lộ trình Luyện thi IELTS chi tiết</p>
+                        <a href="register.html" class="btn btn-primary">Đăng ký ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Tracking Section -->
+    <section class="progress-tracking">
+        <div class="container">
+            <div class="progress-image">
+                <img src="images/progress-tracking.png" alt="Theo dõi tiến độ học tập">
+            </div>
+            <div class="progress-content">
+                <h2>Theo dõi tiến độ học tập</h2>
+                <p>Đăng ký tài khoản để theo dõi tiến độ học tập của bạn theo thời gian thực và nhận các đề xuất cải thiện được cá nhân hóa.</p>
+                <div class="progress-features">
+                    <div class="progress-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Bảng điều khiển trực quan</h4>
+                            <p>Xem tổng quan về tiến độ học tập và các thành tích của bạn</p>
+                        </div>
+                    </div>
+                    <div class="progress-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Thiết lập mục tiêu</h4>
+                            <p>Đặt mục tiêu học tập hàng ngày, hàng tuần và hàng tháng</p>
+                        </div>
+                    </div>
+                    <div class="progress-feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Trợ lý AI</h4>
+                            <p>Nhận đề xuất cá nhân hóa dựa trên kết quả học tập của bạn</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="register.html" class="btn btn-primary">Tạo tài khoản miễn phí</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials path-testimonials">
+        <div class="container">
+            <h2>Học viên nói gì về lộ trình học</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-image">
+                        <img src="images/testimonial-4.jpg" alt="Student testimonial">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Lộ trình học đã giúp tôi tiến bộ rõ rệt. Từ một người không dám nói tiếng Anh, giờ đây tôi có thể tự tin giao tiếp với đồng nghiệp nước ngoài."</p>
+                        <div class="testimonial-author">
+                            <strong>Nguyễn Minh Tuấn</strong>
+                            <span>Lộ trình Giao tiếp</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-image">
+                        <img src="images/testimonial-5.jpg" alt="Student testimonial">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Điều tuyệt vời nhất về lộ trình học là nó cá nhân hóa hoàn toàn. Tôi không phải học những gì tôi đã biết, và hệ thống liên tục gợi ý những bài học phù hợp với khả năng của tôi."</p>
+                        <div class="testimonial-author">
+                            <strong>Trần Thị Mai Anh</strong>
+                            <span>Lộ trình IELTS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-image">
+                        <img src="images/testimonial-6.jpg" alt="Student testimonial">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"Từ một người mới bắt đầu học tiếng Anh ở tuổi 35, lộ trình học đã giúp tôi tiến bộ nhanh chóng và có thể giao tiếp cơ bản chỉ sau 3 tháng."</p>
+                        <div class="testimonial-author">
+                            <strong>Phạm Văn Hiếu</strong>
+                            <span>Lộ trình Người mới bắt đầu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Sẵn sàng bắt đầu hành trình học tiếng Anh?</h2>
+            <p>Tạo tài khoản miễn phí và bắt đầu trải nghiệm lộ trình học được cá nhân hóa ngay hôm nay</p>
+            <a href="register.html" class="btn btn-primary btn-large">Đăng ký miễn phí</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="EasyEnglish Logo">
+                        <span>EasyEnglish</span>
+                    </div>
+                    <p>Nền tảng học tiếng Anh trực tuyến hiệu quả và dễ dàng cho người Việt</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="courses.html">Khóa học</a></li>
+                        <li><a href="learning-path.html">Lộ trình</a></li>
+                        <li><a href="resources.html">Tài nguyên</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Hỗ trợ</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Nhận thông tin mới</h3>
+                    <p>Đăng ký để nhận thông tin về khóa học và tài nguyên mới</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email của bạn">
+                        <button type="submit" class="btn btn-primary">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EasyEnglish. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                    <span>Trang chủ</span>
+                </a>
+            </li>
+            <li>
+                <a href="courses.html">
+                    <i class="fas fa-book"></i>
+                    <span>Khóa học</span>
+                </a>
+            </li>
+            <li>
+                <a href="learning-path.html" class="active">
+                    <i class="fas fa-road"></i>
+                    <span>Lộ trình</span>
+                </a>
+            </li>
+            <li>
+                <a href="resources.html">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Tài nguyên</span>
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class="fas fa-user"></i>
+                    <span>Tài khoản</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/learning-path.js"></script>
+</body>
+</html> 
